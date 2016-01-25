@@ -24,6 +24,11 @@
     border: 2px solid grey;
     border-radius: 5px;
     margin-left: -48px;
+    transition: all 0.5s ease;
+}
+
+.picture:hover {
+    margin-top: 50px;
 }
 
 .content {
@@ -54,16 +59,61 @@ h3 {
     margin-left: 15px;
 }
 
+.links {
+    width: 40px;
+    transition: all 0.5s ease;
+}
+
+.links:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
 .linkpics {
-    margin-left: -48px;
-    border: 1px solid lightgrey;
     clear: both;
 }
 
-.fbpic {
-    width: 10%;
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
 }
 
-.twitpic {
-    width: 10%;
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
