@@ -128,3 +128,22 @@ h3 {
   animation-iteration-count: infinite;
 }
 
+.test {
+    position: absolute;
+    bottom: 30px;    
+}
+
+.block1 {
+    background-color: grey;
+    position: relative;
+    height: 50px;
+    width: 15%;
+    margin-top: 30px;
+    margin-left: 150px;
+    border: 1px dashed darkgrey;
+}
+
+.fixed {
+    position: fixed;
+    border: 1px dashed darkgrey;
+}
