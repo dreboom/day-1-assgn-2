@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url("http://www.zingerbugimages.com/backgrounds/gray_parchment_paper_background_1800x1600.jpg") no-repeat center;
+    background-size: cover;
+}
+
 .header {
     background-color: lightgrey;
     text-align: center;
@@ -25,10 +34,11 @@
     border-radius: 5px;
     margin-left: -48px;
     transition: all 0.5s ease;
+    box-shadow: 5px 10px 10px #888888;
 }
 
 .picture:hover {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .content {
@@ -117,3 +127,4 @@ h3 {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
